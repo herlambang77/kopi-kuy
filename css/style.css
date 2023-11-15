@@ -135,7 +135,7 @@ nav {
    untuk pengguna vscode silahkan arahkan mouse ke kotak warna di bawah
    untuk mengganti warna sesuai keinginan
    */
-   background-color: #198754;
+   background-color: rgb(100, 128, 0);
 
    /* box-shadow membuat efek bayangan */
    box-shadow: 0 3px 7px -2px #000;
@@ -164,7 +164,7 @@ nav {
 
 img.logo {
    /* height mengatur tinggi elemen */
-   height: 40px;
+   height: 50px;
    /* penjelasan margin mirip dengan padding, fungsinya untuk memberi jarak pada elemen */
    margin-left: 20px;
 }
@@ -181,7 +181,7 @@ nav a {
 }
 
 a.shop {
-   margin-right: 100px;
+   margin-right: 10px;
 }
 
 a.chat {
@@ -225,6 +225,7 @@ section {
 header div.kiri,
 header div.kanan {
    /* width mengatur lebar elemen. 50% artinya setengah ukuran elemen pembungkus */
+   text-align: Justify;
    width: 50%;
    padding: 50px;
 }
@@ -355,7 +356,7 @@ section.about-us {
    /* margin-left dan margin-right auto akan membuat posisi elemen berada di tengah */
    margin-left: auto;
    margin-right: auto;
-   text-align: center;
+   text-align: Justify;
 }
 
 section.about-us h2 {
@@ -391,12 +392,13 @@ section.about-us p:nth-child(4) {
 
 section.our-team {
    background-color: #EEE6DC;
-   box-shadow: inset 0px 0px 23px -6px #707070;
+   box-shadow: inset 0px 0px 23px -6px rgb(100, 128, 0);;
    text-align: center;
+   font-style: inherit;
 }
 
 section.our-team h2 {
-   margin-bottom: 20px;
+   margin-bottom: 2ßpx;
    width: 100%;
 }
 
@@ -444,7 +446,7 @@ section.review {
    padding-right: 40px;
    justify-content: space-around;
    /* align-items: stretch; membuat tinggi elemen di dalam .review .baris seragam */
-   text-align: center;
+   text-align: Justify;
 }
 
 section.review h2 {
@@ -459,8 +461,8 @@ section.review>p {
 }
 
 div.testimoni {
-   width: 30%;
-   display: flex;
+   width: 100%;
+   display: Justify;
    flex-wrap: wrap;
    padding: 35px 50px;
    box-shadow: 0px 0px 12px -10px #000;
@@ -488,7 +490,7 @@ div.profile p {
 
 div.testimoni>p {
    width: 100%;
-   text-align: left;
+   text-align: Justify;
 }
 
 
@@ -506,7 +508,7 @@ section.contact-us iframe {
 div.kontak {
    width: 30%;
    /* color mengatur warna tulisan */
-   color: green;
+   color: rgb(100, 128, 0);
    text-align: center;
    margin-top: 50px;
 }
@@ -515,7 +517,7 @@ div.kontak {
 /* FOOTER */
 
 footer {
-   background-color: #198754;
+   background-color: rgb(100, 128, 0);
    padding-top: 15px;
    padding-bottom: 15px;
    color: #fff;
@@ -534,6 +536,38 @@ footer div.navigasi a {
 
 /* UNTUK kode RESPONSIF hari ke 3 tulis DI BAWAH sini */
 
+@media (max-width:600px) {
+
+   .navigasi {
+      display: none;
+   }
+
+   a.shop {
+      margin-right: 20px;
+      margin-left: auto;
+   }
+
+   header div.kiri{
+      width: 10%;
+      text-align: Justify;
+   }
+
+   header div.kanan {
+      width: 100%;
+      text-align: center;
+   }
+
+   div.produk,
+   div.team,
+   div.kontak {
+      width: 50%;
+   }
+
+   div.testimoni {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+}
 
 
 /* Kode CSS Selesai di sini */
